@@ -19,6 +19,10 @@
             height: 25px;
             color: rgb(10, 10, 10);
             }   
+        
+        legend{
+            display:block;
+        }
     </style>
     </head>
     <body>
@@ -34,12 +38,33 @@
                     <legend>Personalia:</legend>
                     <label for="fname">First name:</label>
                     <input type="text" id="fname" name="fname"><br><br>
+
                     <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname"><br><br>
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"><br><br>
-                    <label for="birthday">Birthday:</label>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <label for="birthday">Date of Birth:</label>
                     <input type="date" id="birthday" name="birthday"><br><br>
+                    Gender: <input type="radio" id="male" name="male"
+                        value="male"> Male
+                    <input type="radio" id="female" name="female"
+                        value="female">Female<br><br>
+
+                    <label id="cm">City:</label>
+                    <select id="cm" style="height:
+                        25px;
+                        font-size:14pt;" name="course">
+                        <option value="select" id="check">Select</option>
+                        <option value="Aurangabad" id="check">Aurangabad</option>
+                        <option value="Pune" id="check">Pune</option>
+                        <option value="Mumbai" id="check">Mumbai</option>
+                        <option value="Nashik" id="check">Nashik</option>
+                    </select><br>
+
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
@@ -176,17 +201,6 @@
             <li>Milk</li>
         </ol>
 
-        <label id="cm">Select Destination:</label>
-        <select id="cm" style="height:
-            25px;
-            font-size:14pt;" name="course">
-            <option value="select" id="check">Select</option>
-            <option value="Manali" id="check">Manali</option>
-            <option value="Kerala" id="check">Kerala</option>
-            <option value="Hyderabad" id="check">Hyderabad</option>
-            <option value="Kashmir" id="check">Kashmir</option>
-        </select><br>
-
         <label for="file">Downloading progress:</label>
         <progress id="file" value="72" max="100"> 72% </progress><br>
 
@@ -199,15 +213,34 @@
         <input type="checkbox" id="C" name="C" value="C" />
         <label>C</label> <br>
         <input type="checkbox" id="Java" name="Java" value="Java"
-            checked=?yes?/>
+            checked/>
         <label>Java</label> <br>
         <input type="checkbox" id="Python" name="Python" value="Python" />
         <label>Python</label> <br>
         <input type="checkbox" id="PHP" name="PHP" value="PHP" />
-        <label>PHP</label>
+        <label>PHP</label><br>
+
+        Links:
+        <a href="https://incubxperts.com/">IncubXperts</a> |
+        <a href="https://www.w3schools.com/">w3schools</a> |
+        <a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a><br><br>
+
+        Links using nav:
+        <nav> <!-- it is intended only for major block of navigation links.-->
+            <a href="https://incubxperts.com/">IncubXperts</a> |
+            <a href="https://www.w3schools.com/">w3schools</a> |
+            <a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a>
+        </nav>
+
+        <script>        
+            document.write("Hello World!")
+        </script>
+        <!-- it is used only when jaascript not supported.-->
 
         <footer>
             <p>This is footer</p>
-        </footer>
+        </footer><br>
+
+        <dialog open>This is dialog window</dialog><br>
     </body>
 </html>
